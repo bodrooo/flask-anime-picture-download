@@ -1,0 +1,34 @@
+{% extends "layout/basic.html" %}
+{% block  title %} Anime Art - {{title|capitalize}} {% endblock %}
+{% block body %} 
+
+<div class="container">
+  
+  <div id="nav" class="nav">
+    <h3>Anime - Art</h3>
+    <h3>{{title|capitalize}}</h3>
+        <p>Bodrooo</p>
+  </div>
+  
+<div class="wrapper">
+    {% for url in urls %}
+     <article>
+        <img src="{{ url.url }}" alt="{{ url.url[:-4] }}" />
+        {% if url.artist_name %}
+          <p>Author: {{ url.artist_name }}</p>
+        {% elif url.anime_name %}
+          <p>Anime Name: {{ url.anime_name }}</p>
+        {% endif %}
+     </article>
+    {% endfor %}
+  </div>
+  
+  <div class="random_category">
+    <h3>Recomendation</h3>
+    {% for category in random_category %}
+      <a href="/select_category/{{ category }}">{{ category|capitalize }}</a>
+    {% endfor %}
+  </div>
+  
+</div>
+{% endblock %}
