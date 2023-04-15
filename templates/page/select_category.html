@@ -1,22 +1,20 @@
-{% extends "layout/basic.html" %}
-{% block  title %} Anime Art - {{title|capitalize}} {% endblock %}
-{% block body %} 
+{% extends "layout/basic.html" %} {% block title %} Anime Art -
+{{title|capitalize}} {% endblock %} {% block body %}
 
 <div class="container">
-  
   <div id="nav" class="nav">
     <h3>Anime - Art</h3>
     <h3>{{title|capitalize}}</h3>
-        <p>Bodrooo</p>
-  </div>
-  
-  <div class="select_category">
-    {% for name in category %}
-     <article>
-        <a href="/select_category/{{ name }}">{{ name }}</a>
-     </article>
-    {% endfor %}
+    <p>Bodrooo</p>
+    <div class="small_avatar"></div>
   </div>
 
+  <div class="select_category">
+    {% for name in category %}
+    <article>
+      <a href="/select_category/{{ name }}">{{ name }}</a>
+    </article>
+    {% endfor %}
+  </div>
 </div>
 {% endblock %}

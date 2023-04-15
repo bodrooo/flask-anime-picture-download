@@ -1,9 +1,7 @@
-{% extends "layout/basic.html" %}
-{% block  title %} Anime Art - {{title|capitalize}} {% endblock %}
-{% block body %} 
+{% extends "layout/basic.html" %} {% block title %} Anime Art -
+{{title|capitalize}} {% endblock %} {% block body %}
 
 <div class="container">
-  
   <div id="nav" class="nav">
     <h3>Anime - Art</h3>
     <h3>{{title|capitalize}}</h3>
@@ -13,14 +11,21 @@
     <p>CreateBy: Bodrooo</p>
   </div>
   <div class="welcome">
+    <div class="avatar">
+    </div>
     <p>Welcome To Anime Art</p>
     <p>Download Your Favorite Photo Anime</p>
   </div>
-  
-  
-  <div class="next">  <a href="/select_category">Click Me To Next</a></div>
-  <div class="note"><span>Note:</span> I don't provide a download button, so if you want to download, you just have to press or hold the image you want to download until the download menu appears.</div>
-  <div class="note"><span>Note:</span> if the image hasn't appeared it's loading thank you.</div>
+
+  <div class="next"><a href="/select_category">Click Me To Next</a></div>
+  <div class="note">
+    <span>Note:</span> I don't provide a download button, so if you want to
+    download, you just have to press or hold the image you want to download
+    until the download menu appears.
+  </div>
+  <div class="note">
+    <span>Note:</span> if the image hasn't appeared it's loading thank you.
+  </div>
   <div class="thank-you">
     <h1>Thank You For Visiting</h1>
   </div>

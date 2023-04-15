@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 * {
   box-sizing: border-box;
@@ -28,12 +27,12 @@ body {
 }
 
 .nav p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   place-self: end;
   position: absolute;
   right: 10px;
   bottom: 50%;
-  font-size: .5em;
+  font-size: 0.5em;
 }
 
 .nav h3 {
@@ -50,12 +49,12 @@ body {
 
 .wrapper article {
   border-radius: 5px;
-  font-size: .5em;
+  font-size: 0.5em;
   width: 110px;
   height: 200px;
   display: grid;
   background: #ddd;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -96,14 +95,14 @@ body {
 
 .welcome p {
   width: 100%;
-  height: 20vh;
+  height: 2.5em;
   font-size: 2em;
   display: grid;
   text-align: center;
   place-items: center;
 }
-.welcome p:nth-child(2) {
-  font-size: .9em;
+.welcome p:nth-child(3) {
+  font-size: 0.9em;
 }
 
 .next {
@@ -117,12 +116,12 @@ body {
   display: grid;
   gap: 5px;
   width: 100%;
-} 
+}
 
 .next a {
   margin: auto;
   text-decoration: none;
-  color:  black;
+  color: black;
   display: flex;
   width: 180px;
   height: 50px;
@@ -134,7 +133,7 @@ body {
 .select_category a {
   margin: auto;
   text-decoration: none;
-  color:  black;
+  color: black;
   display: flex;
   width: 100px;
   height: 50px;
@@ -144,23 +143,52 @@ body {
 }
 
 .note {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-top: 10px;
 }
 
 .note span {
   font-weight: bold;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .createed {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .thank-you {
   margin-top: 5px;
-  font-size: .5em;
-  font-family: 'Poppins', sans-serif;
+  font-size: 0.5em;
+  font-family: "Poppins", sans-serif;
   width: 100%;
   text-align: center;
+}
+
+.welcome .avatar {
+  border: 2px solid #000;
+  width: 200px;
+  height: 200px;
+  place-self: center;
+  border-radius: 50%;
+  background-image: url('../asset/img/avatar.png');
+  background-size: 200px;
+  background-position-x: -10px;
+}
+
+.welcome {
+  width: 100%;
+  display: grid;
+}
+
+.nav .small_avatar {
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  background-image: url('../asset/img/avatar.png');
+  background-size: 10px;
+  border-radius: 50%;
+  background-position-x: -1.5px;
 }
